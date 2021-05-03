@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--CSS links -->
+    <link rel="stylesheet"  href="css/bootstrap.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet"  href="css/media.css">
+
+
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <section class="Forms">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="h1u">Forms Overview</h1>
+            <div class="form_w">
+            <form action="#" method="">
+
+         <div class="mb-3">
+           <label for="u_email" class="form-label">Email address</label>
+           <input type="email" class="form-control" id="u_email" name="u_email" required="">
+           
+         </div>
+
+         <div class="mb-3">
+           <label for="u_pass" class="form-label">Password</label>
+           <input type="password" class="form-control" id="u_pass" name="u_pass" required="">
+         </div>
+
+         <div class="mb-3 form-check">
+           <input type="checkbox" class="form-check-input" id="u_check">
+           <label class="form-check-label u_check" for="u_check">Check me out</label>
+         </div>
+
+         <button type="submit" class="btn btn-primary">Submit</button>
+       </form>
+     </div>
+     <h1 class="h1u">Forms Control</h1>
+
+        <div class="mb-3">
+          <label for="e_fcInput" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="e_fcInput" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+          <label for="e_fcTextarea" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="e_fcTextarea" rows="3"></textarea>
+          </div>
+          <h1 class="h1u">Disabled</h1>
+          <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input" disabled>
+          <input class="form-control" type="text" placeholder="Disabled readonly input" aria-label="Disabled input" disabled readonly>
+          <h1 class="h1u">Readonly plain text</h1>
+          <div class="mb-3 row">
+           <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+           <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+          </div>
+         </div>
+         <div class="mb-3 row">
+           <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+           <div class="col-sm-10">
+             <input type="password" class="form-control" id="inputPassword">
+           </div>
+         </div>
+         <form class="row g-3">
+        <div class="col-auto">
+          <label for="email" class="visually-hidden">Email</label>
+          <input type="text" readonly class="form-control-plaintext" id="email" value="email@example.com">
+        </div>
+        <div class="col-auto">
+          <label for="input_pass" class="visually-hidden">Password</label>
+          <input type="password" class="form-control" id="input_pass" placeholder="Password">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+        </div>
+        </form>
+        <h1 class="h1u">File input</h1>
+        <div class="mb-3">
+  <label for="formFile" class="form-label">Default file input example</label>
+  <input class="form-control" type="file" id="formFile">
+   </div>
+   <div class="mb-3">
+     <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+     <input class="form-control" type="file" id="formFileMultiple" multiple>
+   <div class="mb-3">
+     <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+  <input class="form-control" type="file" id="formFileDisabled" disabled>
+   </div>
+   <div class="mb-3">
+     <label for="formFileSm" class="form-label">Small file input example</label>
+     <input class="form-control form-control-sm" id="formFileSm" type="file">
+   </div>
+   <div>
+  <label for="formFileLg" class="form-label">Large file input example</label>
+  <input class="form-control form-control-lg" id="formFileLg" type="file">
+</div>
+<label for="color" class="form-label">Color picker</label>
+<input type="color" class="form-control form-control-color" id="color" value="#563d7c" title="Choose your color">
+
+            <h1 class="h1u">Forms Select</h1>
+            <h3 class="h1u">Defult</h3>
+            <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <h3 class="h1u">Sizing</h3>
+          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </section>
+
+
+       <section class="form_custom">
+      <div class="container">
+         <div class="row">
+        <div class="col-lg-12">
+
+            <!-- Validation start -->
+         
+    <h3 class="h1u">Validation</h3>
+    <form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="full_name" class="form-label">Full name</label>
+    <input type="text" class="form-control" id="full_name" placeholder="Enter your full name" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+      Please enter your full name.
+    </div>
+    </div>
+
+
+
+  <div class="col-md-4">
+    <label for="email">Email Address</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+    <div class="invalid-feedback">
+      Please enter your email address.
+    </div>
+    </div>
+     <div class="valid-feedback">
+      Looks good!
+    </div>
+
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+    
+
+
+      
+    <!-- JS links  -->
+    
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+   </script>
+
+  </body>
+  </html>

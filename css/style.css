@@ -1,0 +1,108 @@
+.box{
+	min-height: 100px;
+	background-color: red;
+}
+.h1u{
+	text-decoration: underline;
+	text-align: center;
+}
+.header{
+	color: white;
+	margin: 0 20px; 
+}
+.button{
+	color: white;
+}
+
+.c_prev {
+    left: 89%  !important; 
+    bottom: 5% !important;
+}
+
+
+.c_next {
+    right: 2%  !important;
+    bottom: 5% !important;
+}
+
+.c_prev,.c_next {
+    top: 85%;
+    bottom: 0;
+    width: 5%;
+}
+
+.custom_ind{
+    position: absolute;
+    right: 86%;
+    bottom: 30%;
+    left: 0;
+    z-index: 2;
+    display: block;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 4%;
+    list-style: none;
+}
+.custom_ind[data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+    lighting-color: white;
+}
+
+.banner{
+    background-image: url(../images/cloudy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slider{
+    background-color: rgba(1,1,1,.7);
+    color: white;
+    padding: 70px;
+}
+.slider h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.slider p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.slider button{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.custom_ind2 {
+    bottom: 40px;
+
+}
+.custom_ind2 button[data-bs-target] {
+   
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+}
+
+
+/*.slider button{
+    margin-bottom: 100px;
+
+}*/
